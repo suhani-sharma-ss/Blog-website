@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    background-color: rgba(12, 117, 88, 0.546);
+}
+
+.navbar p {
+    padding-left: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+
+.container h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    color: rgb(63, 63, 63);
+}
+
+.content p {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+}
+
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.img2 {
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}

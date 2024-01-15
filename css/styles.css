@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    background-color: rgba(12, 117, 88, 0.546);
+}
+
+.navbar p {
+    padding-left: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+.container {
+    background-color: white;
+    /*background-color: #3363ff;*/
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid {
+    margin: 10rem;
+    display: grid;
+    width: 114rem;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+    padding-top: 30px;
+    
+    
+}
+
+.card-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    columns: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+.card-content a {
+    text-decoration: none;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    columns: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+    margin-left: 1rem;
+    transition: 0.25s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+    background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+    margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-gap: 3rem;
+    }
+}
+
+.info-aboutme {
+    /*background-color: rgba(244, 196, 245, 0.815);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin: 50px auto;
+
+
+}
+
+.about_me h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+.about_me p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    padding-right: 10px;
+}
+
+.girl-pic {
+    width: 400px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+
+}
+
+
+
+.main {
+    background-color: rgba(12, 117, 88, 0.546);
+    margin-top: 10rem;
+}
+
+.container {
+    display: flex;
+}
+
+.contactform {
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 50px;
+    padding: 0 34px;
+
+}
+
+.contactform h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.contactform h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: grey;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 28vw;
+    border-radius: 16px;
+    font-size: 18px;
+    margin: 6px 0;
+    padding: 5px;
+}
+
+.contactform form div textarea {
+    width: 28vw;
+    height: 25vh;
+    border-radius: 16px;
+    font-size: 18px;
+    margin: 6px 0;
+    padding: 5px;
+}
+
+.buttons {
+    margin-top: 34px;
+
+}
+
+.contactform form button {
+    padding: 8px 14px;
+    border-radius: 15px;
+    color: black;
+    background-color: #d2d1ec;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.contactform form button:hover {
+    background-color: white;
+    color: #d2d1ec;
+}
